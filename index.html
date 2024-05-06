@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quan ly nhan vien</title>
+  </head>
+  <body>
+    <h1>Employee Management System</h1>
+    <form id="employeeForm">
+      <input
+        type="text"
+        id="username"
+        placeholder="Username (4-6 numbers)"
+        required
+      /><br />
+      <input type="text" id="fullname" placeholder="Full Name" required /><br />
+      <input type="email" id="email" placeholder="Email" required /><br />
+      <input
+        type="password"
+        id="password"
+        placeholder="Password (6-10 chars)"
+        required
+      /><br />
+      <input
+        type="text"
+        id="startDate"
+        placeholder="Start Date (mm/dd/yyyy)"
+        required
+      /><br />
+      <input
+        type="number"
+        id="salary"
+        placeholder="Basic Salary (1000000-20000000)"
+        required
+      /><br />
+      <select id="position" required>
+        <option value="">Select Position</option>
+        <option value="Director">Director</option>
+        <option value="Manager">Manager</option>
+        <option value="Employee">Employee</option></select
+      ><br />
+      <input
+        type="number"
+        id="hoursWorked"
+        placeholder="Hours Worked (80-200)"
+        required
+      /><br />
+      <button type="button" onclick="addEmployee()">Add Employee</button>
+    </form>
+    <h2>Employees List</h2>
+    <table id="employeesTable">
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Position</th>
+          <th>Start Date</th>
+          <th>Basic Salary</th>
+          <th>Hours Worked</th>
+          <th>Total Salary</th>
+          <th>Classification</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="./index.js"></script>
+  </body>
+</html>
